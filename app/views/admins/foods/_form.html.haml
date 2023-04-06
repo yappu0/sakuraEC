@@ -1,0 +1,6 @@
+= simple_form_for [:admins, food] do |f|
+  = f.input :name
+  = f.input :description
+  = f.input :price_without_tax
+  = f.input :published
+  = f.button :submit, class: 'btn btn-primary'

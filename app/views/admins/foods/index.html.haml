@@ -1,0 +1,12 @@
+.container.pt-4
+  .d-flex.align-items-center
+    %h1.fs-4.mb-3.me-3 食品一覧
+    = link_to '登録', new_admins_food_path, class: 'btn btn-primary mb-3'
+
+  .d-grid.grid-auto-fill.gap-3
+    - @foods.each do |food|
+      = link_to admins_food_path(food), class: 'card text-decoration-none text-dark' do
+        .card-img-top
+        .card-body
+          %p.card-title= food.name
+          %p.card-text= food.description

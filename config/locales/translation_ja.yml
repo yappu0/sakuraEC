@@ -3,6 +3,13 @@ ja:
     models:
       administrator: 管理者
 
+    attributes:
+      food:
+        name: 食品名
+        description: 説明
+        price_without_tax: 税抜き価格
+        published: 公開
+
   views:
     back: 戻る
     new: 新規登録
