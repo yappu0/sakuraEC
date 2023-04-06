@@ -14,10 +14,15 @@ gem "jsbundling-rails"
 gem "hamlit-rails"
 gem "simple_form"
 gem "devise"
+gem "turbo-rails"
 
 group :development, :test do
 end
 
 group :development do
+  gem 'web-console'
   gem 'erb2haml'
 end
+
+# Use Redis for Action Cable
+gem "redis", "~> 4.0"

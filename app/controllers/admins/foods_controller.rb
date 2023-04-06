@@ -40,7 +40,7 @@ class Admins::FoodsController < Admins::ApplicationController
   private
 
   def food_params
-    params.require(:food).permit(:name, :description, :price_without_tax, :published)
+    params.require(:food).permit(:name, :description, :price_without_tax, :published, :image)
   end
 
   def set_food

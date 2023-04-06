@@ -5,8 +5,9 @@
 
   .d-grid.grid-auto-fill.gap-3
     - @foods.each do |food|
-      = link_to admins_food_path(food), class: 'card text-decoration-none text-dark' do
+      = link_to admins_food_path(food), class: 'food-card card text-decoration-none text-dark' do
         .card-img-top
+          .foods-image-wrapper= food_image_tag(food)
         .card-body
           %p.card-title= food.name
           %p.card-text= food.description
