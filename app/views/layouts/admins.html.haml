@@ -9,4 +9,11 @@
     = stylesheet_link_tag "application"
     = javascript_include_tag "application", "data-turbo-track": "reload", defer: true
   %body
+    %header
+      .p-3.bg-dark.text-white
+        .container
+          .d-flex.flex-wrap.align-items-center.justify-content-between
+            = link_to '管理画面 | SakuraEC', admins_root_path, class: 'd-block text-white text-decoration-none'
+    .container.pt-3
+      = render 'layouts/flash'
     = yield

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
              controllers: { sessions: 'admins/sessions' }
 
   namespace :admins do
-    root 'home#index'
+    resources :foods
+    root 'foods#index'
   end
 end

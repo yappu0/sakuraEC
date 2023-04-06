@@ -7,9 +7,10 @@
     "dev": "vite",
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --public-path=assets",
     "preview": "vite preview",
-    "build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules"
+    "build:css": "sass ./app/assets/stylesheets/admins.scss:./app/assets/builds/admins.css --no-source-map --load-path=node_modules"
   },
   "dependencies": {
+    "@hotwired/turbo-rails": "^7.3.0",
     "@popperjs/core": "^2.11.7",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.4",
