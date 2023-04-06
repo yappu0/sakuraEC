@@ -1,4 +1,5 @@
 - flash.each do |name, msg|
-  .alert.alert-dismissible{ class: "alert-#{name == 'notice' ? 'success' : 'danger'}" }
-    = msg
-    %button.btn-close{ type: 'button', 'aria-label': 'Close', data: { 'bs-dismiss': 'alert' } }
+  .container.pt-3
+    .alert.alert-dismissible{ class: "alert-#{name == 'notice' ? 'success' : 'danger'}" }
+      = msg
+      %button.btn-close{ type: 'button', 'aria-label': 'Close', data: { 'bs-dismiss': 'alert' } }

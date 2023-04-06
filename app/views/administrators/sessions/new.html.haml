@@ -1,4 +1,4 @@
-.container.py-5
+.container.max-width-600
   %h1.pt-5.pb-4.fs-2= t('devise.sessions.new.sign_in')
   = simple_form_for(resource, as: resource_name, url: session_path(resource_name), data: { turbo: false }) do |f|
     .form-inputs
