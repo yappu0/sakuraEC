@@ -23,6 +23,3 @@ group :development do
   gem 'web-console'
   gem 'erb2haml'
 end
-
-# Use Redis for Action Cable
-gem "redis", "~> 4.0"

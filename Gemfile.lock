@@ -178,7 +178,6 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
-    redis (4.8.1)
     responders (3.1.0)
       actionpack (>= 5.2)
       railties (>= 5.2)
@@ -231,7 +230,6 @@ DEPENDENCIES
   propshaft
   puma
   rails (= 7.0.4.3)
-  redis (~> 4.0)
   simple_form
   turbo-rails
   vite_rails

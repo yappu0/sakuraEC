@@ -15,7 +15,7 @@ class Admins::FoodsController < Admins::ApplicationController
   def create
     @food = Food.new(food_params)
     if @food.save
-      redirect_to admins_food_url(@food)
+      redirect_to admins_food_url(@food), notice: t('controllers.created')
     else
       render :new, status: :unprocessable_entity
     end
@@ -26,7 +26,7 @@ class Admins::FoodsController < Admins::ApplicationController
 
   def update
     if @food.update(food_params)
-      redirect_to admins_food_url(@food)
+      redirect_to admins_food_url(@food), notice: t('controllers.updated')
     else
       render :edit, status: :unprocessable_entity
     end
@@ -34,7 +34,7 @@ class Admins::FoodsController < Admins::ApplicationController
 
   def destroy
     @food.destroy!
-    redirect_to admins_foods_url
+    redirect_to admins_foods_url, notice: t('controllers.destroyed')
   end
 
   private
