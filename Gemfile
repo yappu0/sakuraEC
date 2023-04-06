@@ -9,9 +9,15 @@ gem "pg"
 gem "puma"
 gem "bootsnap", require: false
 gem 'vite_rails'
+gem "cssbundling-rails"
+gem "jsbundling-rails"
+gem "hamlit-rails"
+gem "simple_form"
+gem "devise"
 
 group :development, :test do
 end
 
 group :development do
+  gem 'erb2haml'
 end

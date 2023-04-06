@@ -1,0 +1,12 @@
+!!!
+%html{:lang => "ja"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title 管理画面 | SakuraEC
+    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "application", "data-turbo-track": "reload", defer: true
+  %body
+    = yield

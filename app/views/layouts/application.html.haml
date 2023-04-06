@@ -1,0 +1,15 @@
+!!!
+%html{:lang => "ja"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title SakuraEC
+    %meta{:content => "width=device-width,initial-scale=1", :name => "viewport"}/
+    = csrf_meta_tags
+    = csp_meta_tag
+    = vite_client_tag
+    = vite_react_refresh_tag
+    = vite_javascript_tag 'main.jsx'
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "application", "data-turbo-track": "reload", defer: true
+  %body
+    = yield
